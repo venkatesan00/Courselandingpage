@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Landing Page</title>
+<link rel="stylesheet" href="courselandingpage.css">
+<script src="courselandingpage.js"></script>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\js1.jpg">
+        <h2 class="card-title">Html,Css,Javascript</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a dolorum dicta, eius cumque quis.</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\java.png">
+        <h2 class="card-title">Java Fullstack</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sed maiores reiciendis dolorem laborum nostrum!</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\python2.png">
+        <h2 class="card-title">Python</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis explicabo necessitatibus ipsa, praesentium fugit!</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\react.png">
+        <h2 class="card-title">React</h2>
+        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quo id aperiam accusamus obcaecati impedit!</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\devops 2.png">
+        <h2 class="card-title">DevOps</h2>
+        <p class="card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quidem, officia impedit soluta veritatis porro!</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.toptal.com/" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    const cards = document.querySelectorAll('.card');
+    let currentIndex = 0;
+    const numCards = cards.length;
+    
+    setInterval(() => {
+      cards[currentIndex].style.transform = 'translateY(100%)';
+      currentIndex = (currentIndex + 1) % numCards;
+      cards[currentIndex].style.transform = 'translateY(0)';
+    }, 2000);
+    </script>
+</body>
+</html>
